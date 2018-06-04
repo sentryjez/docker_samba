@@ -6,8 +6,7 @@ ENV LANG C.UTF-8
 RUN apk update \
 	&& apk upgrade \
 	&& apk add samba openrc \
-	&& rc-update add samba \
-	&& rc-service samba start
+	&& rc-update add samba
 	
 VOLUME ["/etc/samba", "/storage"]
 
