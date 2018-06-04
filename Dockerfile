@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER: Jens Merlier
+MAINTAINER Jens Merlier
 
 ENV LANG C.UTF-8
 
