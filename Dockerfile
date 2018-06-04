@@ -14,4 +14,4 @@ EXPOSE 139 445
 
 WORKDIR /
 
-CMD ["/init"]
+CMD ["/bin/sh"]
