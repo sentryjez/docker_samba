@@ -10,7 +10,7 @@ RUN apk update \
 	
 VOLUME ["/etc/samba/", "/storage/"]
 
-COPY /assets/samba.conf /etc/samba/samba.conf
+ADD /assets/smb.conf /etc/samba/samba.conf
  
 EXPOSE 139 445
 
