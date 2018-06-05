@@ -8,8 +8,10 @@ RUN apk update \
 	&& apk add samba openrc \
 	&& rc-update add samba
 	
-VOLUME ["/etc/samba", "/storage"]
+VOLUME ["/etc/samba/", "/storage/"]
 
+ADD /assets/smb.conf /etc/samba/samba.conf
+ 
 EXPOSE 139 445
 
 WORKDIR /
